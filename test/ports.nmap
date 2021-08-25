@@ -1,0 +1,314 @@
+# Nmap 7.80 scan initiated Wed Aug 25 21:47:50 2021 as: nmap -sS -vv -oA test/ports 172.16.10.0/24
+Nmap scan report for 172.16.10.0 [host down, received no-response]
+Nmap scan report for 172.16.10.2 [host down, received no-response]
+Nmap scan report for 172.16.10.3 [host down, received no-response]
+Nmap scan report for 172.16.10.4 [host down, received no-response]
+Nmap scan report for 172.16.10.5 [host down, received no-response]
+Nmap scan report for 172.16.10.6 [host down, received no-response]
+Nmap scan report for 172.16.10.7 [host down, received no-response]
+Nmap scan report for 172.16.10.8 [host down, received no-response]
+Nmap scan report for 172.16.10.9 [host down, received no-response]
+Nmap scan report for 172.16.10.10 [host down, received no-response]
+Nmap scan report for 172.16.10.12 [host down, received no-response]
+Nmap scan report for 172.16.10.13 [host down, received no-response]
+Nmap scan report for 172.16.10.14 [host down, received no-response]
+Nmap scan report for 172.16.10.15 [host down, received no-response]
+Nmap scan report for 172.16.10.16 [host down, received no-response]
+Nmap scan report for 172.16.10.17 [host down, received no-response]
+Nmap scan report for 172.16.10.18 [host down, received no-response]
+Nmap scan report for 172.16.10.21 [host down, received no-response]
+Nmap scan report for 172.16.10.22 [host down, received no-response]
+Nmap scan report for 172.16.10.23 [host down, received no-response]
+Nmap scan report for 172.16.10.24 [host down, received no-response]
+Nmap scan report for 172.16.10.25 [host down, received no-response]
+Nmap scan report for 172.16.10.26 [host down, received no-response]
+Nmap scan report for 172.16.10.27 [host down, received no-response]
+Nmap scan report for 172.16.10.28 [host down, received no-response]
+Nmap scan report for 172.16.10.29 [host down, received no-response]
+Nmap scan report for 172.16.10.30 [host down, received no-response]
+Nmap scan report for 172.16.10.31 [host down, received no-response]
+Nmap scan report for 172.16.10.32 [host down, received no-response]
+Nmap scan report for 172.16.10.33 [host down, received no-response]
+Nmap scan report for 172.16.10.34 [host down, received no-response]
+Nmap scan report for 172.16.10.35 [host down, received no-response]
+Nmap scan report for 172.16.10.36 [host down, received no-response]
+Nmap scan report for 172.16.10.38 [host down, received no-response]
+Nmap scan report for 172.16.10.39 [host down, received no-response]
+Nmap scan report for 172.16.10.40 [host down, received no-response]
+Nmap scan report for 172.16.10.41 [host down, received no-response]
+Nmap scan report for 172.16.10.42 [host down, received no-response]
+Nmap scan report for 172.16.10.43 [host down, received no-response]
+Nmap scan report for 172.16.10.44 [host down, received no-response]
+Nmap scan report for 172.16.10.45 [host down, received no-response]
+Nmap scan report for 172.16.10.46 [host down, received no-response]
+Nmap scan report for 172.16.10.47 [host down, received no-response]
+Nmap scan report for 172.16.10.48 [host down, received no-response]
+Nmap scan report for 172.16.10.49 [host down, received no-response]
+Nmap scan report for 172.16.10.50 [host down, received no-response]
+Nmap scan report for 172.16.10.51 [host down, received no-response]
+Nmap scan report for 172.16.10.52 [host down, received no-response]
+Nmap scan report for 172.16.10.53 [host down, received no-response]
+Nmap scan report for 172.16.10.54 [host down, received no-response]
+Nmap scan report for 172.16.10.55 [host down, received no-response]
+Nmap scan report for 172.16.10.56 [host down, received no-response]
+Nmap scan report for 172.16.10.57 [host down, received no-response]
+Nmap scan report for 172.16.10.58 [host down, received no-response]
+Nmap scan report for 172.16.10.59 [host down, received no-response]
+Nmap scan report for 172.16.10.60 [host down, received no-response]
+Nmap scan report for 172.16.10.61 [host down, received no-response]
+Nmap scan report for 172.16.10.62 [host down, received no-response]
+Nmap scan report for 172.16.10.63 [host down, received no-response]
+Nmap scan report for 172.16.10.64 [host down, received no-response]
+Nmap scan report for 172.16.10.65 [host down, received no-response]
+Nmap scan report for 172.16.10.66 [host down, received no-response]
+Nmap scan report for 172.16.10.67 [host down, received no-response]
+Nmap scan report for 172.16.10.68 [host down, received no-response]
+Nmap scan report for 172.16.10.69 [host down, received no-response]
+Nmap scan report for 172.16.10.70 [host down, received no-response]
+Nmap scan report for 172.16.10.71 [host down, received no-response]
+Nmap scan report for 172.16.10.72 [host down, received no-response]
+Nmap scan report for 172.16.10.73 [host down, received no-response]
+Nmap scan report for 172.16.10.74 [host down, received no-response]
+Nmap scan report for 172.16.10.75 [host down, received no-response]
+Nmap scan report for 172.16.10.76 [host down, received no-response]
+Nmap scan report for 172.16.10.77 [host down, received no-response]
+Nmap scan report for 172.16.10.78 [host down, received no-response]
+Nmap scan report for 172.16.10.79 [host down, received no-response]
+Nmap scan report for 172.16.10.80 [host down, received no-response]
+Nmap scan report for 172.16.10.81 [host down, received no-response]
+Nmap scan report for 172.16.10.82 [host down, received no-response]
+Nmap scan report for 172.16.10.83 [host down, received no-response]
+Nmap scan report for 172.16.10.84 [host down, received no-response]
+Nmap scan report for 172.16.10.85 [host down, received no-response]
+Nmap scan report for 172.16.10.86 [host down, received no-response]
+Nmap scan report for 172.16.10.87 [host down, received no-response]
+Nmap scan report for 172.16.10.88 [host down, received no-response]
+Nmap scan report for 172.16.10.89 [host down, received no-response]
+Nmap scan report for 172.16.10.90 [host down, received no-response]
+Nmap scan report for 172.16.10.91 [host down, received no-response]
+Nmap scan report for 172.16.10.92 [host down, received no-response]
+Nmap scan report for 172.16.10.93 [host down, received no-response]
+Nmap scan report for 172.16.10.94 [host down, received no-response]
+Nmap scan report for 172.16.10.95 [host down, received no-response]
+Nmap scan report for 172.16.10.96 [host down, received no-response]
+Nmap scan report for 172.16.10.97 [host down, received no-response]
+Nmap scan report for 172.16.10.98 [host down, received no-response]
+Nmap scan report for 172.16.10.99 [host down, received no-response]
+Nmap scan report for 172.16.10.100 [host down, received no-response]
+Nmap scan report for 172.16.10.101 [host down, received no-response]
+Nmap scan report for 172.16.10.102 [host down, received no-response]
+Nmap scan report for 172.16.10.103 [host down, received no-response]
+Nmap scan report for 172.16.10.104 [host down, received no-response]
+Nmap scan report for 172.16.10.105 [host down, received no-response]
+Nmap scan report for 172.16.10.106 [host down, received no-response]
+Nmap scan report for 172.16.10.107 [host down, received no-response]
+Nmap scan report for 172.16.10.108 [host down, received no-response]
+Nmap scan report for 172.16.10.109 [host down, received no-response]
+Nmap scan report for 172.16.10.110 [host down, received no-response]
+Nmap scan report for 172.16.10.111 [host down, received no-response]
+Nmap scan report for 172.16.10.112 [host down, received no-response]
+Nmap scan report for 172.16.10.113 [host down, received no-response]
+Nmap scan report for 172.16.10.114 [host down, received no-response]
+Nmap scan report for 172.16.10.115 [host down, received no-response]
+Nmap scan report for 172.16.10.116 [host down, received no-response]
+Nmap scan report for 172.16.10.117 [host down, received no-response]
+Nmap scan report for 172.16.10.118 [host down, received no-response]
+Nmap scan report for 172.16.10.119 [host down, received no-response]
+Nmap scan report for 172.16.10.120 [host down, received no-response]
+Nmap scan report for 172.16.10.121 [host down, received no-response]
+Nmap scan report for 172.16.10.122 [host down, received no-response]
+Nmap scan report for 172.16.10.123 [host down, received no-response]
+Nmap scan report for 172.16.10.124 [host down, received no-response]
+Nmap scan report for 172.16.10.125 [host down, received no-response]
+Nmap scan report for 172.16.10.126 [host down, received no-response]
+Nmap scan report for 172.16.10.127 [host down, received no-response]
+Nmap scan report for 172.16.10.128 [host down, received no-response]
+Nmap scan report for 172.16.10.129 [host down, received no-response]
+Nmap scan report for 172.16.10.130 [host down, received no-response]
+Nmap scan report for 172.16.10.131 [host down, received no-response]
+Nmap scan report for 172.16.10.132 [host down, received no-response]
+Nmap scan report for 172.16.10.133 [host down, received no-response]
+Nmap scan report for 172.16.10.134 [host down, received no-response]
+Nmap scan report for 172.16.10.135 [host down, received no-response]
+Nmap scan report for 172.16.10.136 [host down, received no-response]
+Nmap scan report for 172.16.10.137 [host down, received no-response]
+Nmap scan report for 172.16.10.138 [host down, received no-response]
+Nmap scan report for 172.16.10.139 [host down, received no-response]
+Nmap scan report for 172.16.10.140 [host down, received no-response]
+Nmap scan report for 172.16.10.141 [host down, received no-response]
+Nmap scan report for 172.16.10.142 [host down, received no-response]
+Nmap scan report for 172.16.10.143 [host down, received no-response]
+Nmap scan report for 172.16.10.144 [host down, received no-response]
+Nmap scan report for 172.16.10.145 [host down, received no-response]
+Nmap scan report for 172.16.10.146 [host down, received no-response]
+Nmap scan report for 172.16.10.147 [host down, received no-response]
+Nmap scan report for 172.16.10.148 [host down, received no-response]
+Nmap scan report for 172.16.10.149 [host down, received no-response]
+Nmap scan report for 172.16.10.150 [host down, received no-response]
+Nmap scan report for 172.16.10.151 [host down, received no-response]
+Nmap scan report for 172.16.10.152 [host down, received no-response]
+Nmap scan report for 172.16.10.153 [host down, received no-response]
+Nmap scan report for 172.16.10.154 [host down, received no-response]
+Nmap scan report for 172.16.10.155 [host down, received no-response]
+Nmap scan report for 172.16.10.156 [host down, received no-response]
+Nmap scan report for 172.16.10.157 [host down, received no-response]
+Nmap scan report for 172.16.10.158 [host down, received no-response]
+Nmap scan report for 172.16.10.159 [host down, received no-response]
+Nmap scan report for 172.16.10.160 [host down, received no-response]
+Nmap scan report for 172.16.10.161 [host down, received no-response]
+Nmap scan report for 172.16.10.162 [host down, received no-response]
+Nmap scan report for 172.16.10.163 [host down, received no-response]
+Nmap scan report for 172.16.10.164 [host down, received no-response]
+Nmap scan report for 172.16.10.165 [host down, received no-response]
+Nmap scan report for 172.16.10.166 [host down, received no-response]
+Nmap scan report for 172.16.10.167 [host down, received no-response]
+Nmap scan report for 172.16.10.168 [host down, received no-response]
+Nmap scan report for 172.16.10.169 [host down, received no-response]
+Nmap scan report for 172.16.10.170 [host down, received no-response]
+Nmap scan report for 172.16.10.171 [host down, received no-response]
+Nmap scan report for 172.16.10.172 [host down, received no-response]
+Nmap scan report for 172.16.10.173 [host down, received no-response]
+Nmap scan report for 172.16.10.174 [host down, received no-response]
+Nmap scan report for 172.16.10.175 [host down, received no-response]
+Nmap scan report for 172.16.10.176 [host down, received no-response]
+Nmap scan report for 172.16.10.177 [host down, received no-response]
+Nmap scan report for 172.16.10.178 [host down, received no-response]
+Nmap scan report for 172.16.10.179 [host down, received no-response]
+Nmap scan report for 172.16.10.180 [host down, received no-response]
+Nmap scan report for 172.16.10.181 [host down, received no-response]
+Nmap scan report for 172.16.10.182 [host down, received no-response]
+Nmap scan report for 172.16.10.183 [host down, received no-response]
+Nmap scan report for 172.16.10.184 [host down, received no-response]
+Nmap scan report for 172.16.10.185 [host down, received no-response]
+Nmap scan report for 172.16.10.186 [host down, received no-response]
+Nmap scan report for 172.16.10.187 [host down, received no-response]
+Nmap scan report for 172.16.10.188 [host down, received no-response]
+Nmap scan report for 172.16.10.189 [host down, received no-response]
+Nmap scan report for 172.16.10.190 [host down, received no-response]
+Nmap scan report for 172.16.10.191 [host down, received no-response]
+Nmap scan report for 172.16.10.192 [host down, received no-response]
+Nmap scan report for 172.16.10.193 [host down, received no-response]
+Nmap scan report for 172.16.10.194 [host down, received no-response]
+Nmap scan report for 172.16.10.195 [host down, received no-response]
+Nmap scan report for 172.16.10.196 [host down, received no-response]
+Nmap scan report for 172.16.10.197 [host down, received no-response]
+Nmap scan report for 172.16.10.198 [host down, received no-response]
+Nmap scan report for 172.16.10.199 [host down, received no-response]
+Nmap scan report for 172.16.10.200 [host down, received no-response]
+Nmap scan report for 172.16.10.201 [host down, received no-response]
+Nmap scan report for 172.16.10.202 [host down, received no-response]
+Nmap scan report for 172.16.10.203 [host down, received no-response]
+Nmap scan report for 172.16.10.204 [host down, received no-response]
+Nmap scan report for 172.16.10.205 [host down, received no-response]
+Nmap scan report for 172.16.10.206 [host down, received no-response]
+Nmap scan report for 172.16.10.207 [host down, received no-response]
+Nmap scan report for 172.16.10.208 [host down, received no-response]
+Nmap scan report for 172.16.10.209 [host down, received no-response]
+Nmap scan report for 172.16.10.210 [host down, received no-response]
+Nmap scan report for 172.16.10.211 [host down, received no-response]
+Nmap scan report for 172.16.10.212 [host down, received no-response]
+Nmap scan report for 172.16.10.213 [host down, received no-response]
+Nmap scan report for 172.16.10.214 [host down, received no-response]
+Nmap scan report for 172.16.10.215 [host down, received no-response]
+Nmap scan report for 172.16.10.216 [host down, received no-response]
+Nmap scan report for 172.16.10.217 [host down, received no-response]
+Nmap scan report for 172.16.10.218 [host down, received no-response]
+Nmap scan report for 172.16.10.219 [host down, received no-response]
+Nmap scan report for 172.16.10.220 [host down, received no-response]
+Nmap scan report for 172.16.10.221 [host down, received no-response]
+Nmap scan report for 172.16.10.222 [host down, received no-response]
+Nmap scan report for 172.16.10.223 [host down, received no-response]
+Nmap scan report for 172.16.10.224 [host down, received no-response]
+Nmap scan report for 172.16.10.225 [host down, received no-response]
+Nmap scan report for 172.16.10.226 [host down, received no-response]
+Nmap scan report for 172.16.10.227 [host down, received no-response]
+Nmap scan report for 172.16.10.228 [host down, received no-response]
+Nmap scan report for 172.16.10.229 [host down, received no-response]
+Nmap scan report for 172.16.10.230 [host down, received no-response]
+Nmap scan report for 172.16.10.231 [host down, received no-response]
+Nmap scan report for 172.16.10.232 [host down, received no-response]
+Nmap scan report for 172.16.10.233 [host down, received no-response]
+Nmap scan report for 172.16.10.234 [host down, received no-response]
+Nmap scan report for 172.16.10.235 [host down, received no-response]
+Nmap scan report for 172.16.10.236 [host down, received no-response]
+Nmap scan report for 172.16.10.237 [host down, received no-response]
+Nmap scan report for 172.16.10.238 [host down, received no-response]
+Nmap scan report for 172.16.10.239 [host down, received no-response]
+Nmap scan report for 172.16.10.240 [host down, received no-response]
+Nmap scan report for 172.16.10.241 [host down, received no-response]
+Nmap scan report for 172.16.10.242 [host down, received no-response]
+Nmap scan report for 172.16.10.243 [host down, received no-response]
+Nmap scan report for 172.16.10.244 [host down, received no-response]
+Nmap scan report for 172.16.10.245 [host down, received no-response]
+Nmap scan report for 172.16.10.246 [host down, received no-response]
+Nmap scan report for 172.16.10.247 [host down, received no-response]
+Nmap scan report for 172.16.10.248 [host down, received no-response]
+Nmap scan report for 172.16.10.249 [host down, received no-response]
+Nmap scan report for 172.16.10.250 [host down, received no-response]
+Nmap scan report for 172.16.10.251 [host down, received no-response]
+Nmap scan report for 172.16.10.252 [host down, received no-response]
+Nmap scan report for 172.16.10.253 [host down, received no-response]
+Nmap scan report for 172.16.10.254 [host down, received no-response]
+Nmap scan report for 172.16.10.255 [host down, received no-response]
+Nmap scan report for 172.16.10.1
+Host is up, received echo-reply ttl 64 (0.42s latency).
+Scanned at 2021-08-25 21:47:50 AEST for 167s
+Not shown: 997 filtered ports
+Reason: 997 no-responses
+PORT    STATE SERVICE REASON
+53/tcp  open  domain  syn-ack ttl 64
+80/tcp  open  http    syn-ack ttl 64
+443/tcp open  https   syn-ack ttl 64
+
+Nmap scan report for 172.16.10.11
+Host is up, received echo-reply ttl 127 (0.47s latency).
+Scanned at 2021-08-25 21:48:03 AEST for 147s
+Not shown: 994 closed ports
+Reason: 994 resets
+PORT     STATE SERVICE       REASON
+23/tcp   open  telnet        syn-ack ttl 127
+135/tcp  open  msrpc         syn-ack ttl 127
+139/tcp  open  netbios-ssn   syn-ack ttl 127
+445/tcp  open  microsoft-ds  syn-ack ttl 127
+2869/tcp open  icslap        syn-ack ttl 127
+3389/tcp open  ms-wbt-server syn-ack ttl 127
+
+Nmap scan report for 172.16.10.19
+Host is up, received echo-reply ttl 127 (0.44s latency).
+Scanned at 2021-08-25 21:48:08 AEST for 145s
+Not shown: 993 closed ports
+Reason: 993 resets
+PORT     STATE SERVICE       REASON
+21/tcp   open  ftp           syn-ack ttl 127
+23/tcp   open  telnet        syn-ack ttl 127
+135/tcp  open  msrpc         syn-ack ttl 127
+139/tcp  open  netbios-ssn   syn-ack ttl 127
+445/tcp  open  microsoft-ds  syn-ack ttl 127
+2869/tcp open  icslap        syn-ack ttl 127
+3389/tcp open  ms-wbt-server syn-ack ttl 127
+
+Nmap scan report for 172.16.10.20
+Host is up, received echo-reply ttl 127 (0.44s latency).
+Scanned at 2021-08-25 21:48:12 AEST for 143s
+Not shown: 994 closed ports
+Reason: 994 resets
+PORT     STATE SERVICE       REASON
+23/tcp   open  telnet        syn-ack ttl 127
+135/tcp  open  msrpc         syn-ack ttl 127
+139/tcp  open  netbios-ssn   syn-ack ttl 127
+445/tcp  open  microsoft-ds  syn-ack ttl 127
+2869/tcp open  icslap        syn-ack ttl 127
+3389/tcp open  ms-wbt-server syn-ack ttl 127
+
+Nmap scan report for 172.16.10.37
+Host is up, received echo-reply ttl 127 (0.46s latency).
+Scanned at 2021-08-25 21:47:54 AEST for 155s
+Not shown: 997 closed ports
+Reason: 997 resets
+PORT     STATE SERVICE     REASON
+135/tcp  open  msrpc       syn-ack ttl 127
+139/tcp  open  netbios-ssn syn-ack ttl 127
+1025/tcp open  NFS-or-IIS  syn-ack ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Aug 25 21:50:37 2021 -- 256 IP addresses (5 hosts up) scanned in 166.38 seconds
