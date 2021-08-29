@@ -1,0 +1,52 @@
+# Nmap 7.80 scan initiated Sun Aug 29 17:08:49 2021 as: nmap -sS -oA nmap/scan 172.16.10.0/24
+Nmap scan report for 172.16.10.1
+Host is up (0.44s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+53/tcp  open  domain
+80/tcp  open  http
+443/tcp open  https
+
+Nmap scan report for 172.16.10.11
+Host is up (0.51s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+23/tcp   open  telnet
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2869/tcp open  icslap
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.10.19
+Host is up (0.59s latency).
+Not shown: 993 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+23/tcp   open  telnet
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2869/tcp open  icslap
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.10.20
+Host is up (0.61s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+23/tcp   open  telnet
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2869/tcp open  icslap
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.10.37
+Host is up (0.53s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+1027/tcp open  IIS
+
+# Nmap done at Sun Aug 29 17:13:01 2021 -- 256 IP addresses (5 hosts up) scanned in 252.36 seconds

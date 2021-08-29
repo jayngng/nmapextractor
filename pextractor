@@ -1,0 +1,161 @@
+#!/usr/bin/ruby
+
+
+def main(ip, st, opt, file)
+  case opt
+    when nil then usage
+    when "-oX" then xml(ip, st, file)
+    when "-oN" then nmap(ip, st, file)
+    when "-oG" then gnmap(ip, st, file)
+    else detect(ip, st, opt)
+  end
+end
+
+def nmap(u_ip, state, file)
+  begin
+    # Read ip input from user
+    ip = u_ip.gsub(".", "\\.")
+
+    # ip and port state 
+    ip_pattern = /^Nmap scan report for #{ip}$/ 
+    up_host_pattern = /^Host is up (?:.)*\n/
+    port_pattern = /^(\d+)\/\w+\s+#{state}\s+.+\n/
+
+
+    # Read file and find matching pattern
+    if file then stream = File.new(file, "r")
+    else stream = $stdin end
+
+    stream.each do |line|
+      line.match(ip_pattern) do
+
+        # Check if host is up
+        stream.readline.match(up_host_pattern) do
+          # if match →  extract port
+          stream.readline # → Read "Not shown..."
+          stream.readline # → Read "PORT STATE SERVICE VERSION"
+
+          stream.each do |line|
+            line =~ port_pattern
+            puts $1 if $1
+            break if line == "\n"
+          end
+        end
+      end
+    end
+  rescue Exception => e
+    puts e
+  end
+end
+
+def gnmap(u_ip, state, file)
+  begin
+  
+    ip = u_ip.gsub(".","\\.")
+
+    # Read pattern
+    pattern = /^Host:\s+#{ip}\s+\(\)\s+Port(?:.)*\n/
+    
+    # Read file
+    if file then stream = File.new(file, "r")
+    else stream = $stdin end
+
+    stream.each do |line|
+      line.match(pattern) do
+  
+        # Read port
+        port = /(?:(\d+)\/#{state}\/\w+\/\/.+?)\//
+  
+        # Extract pattern
+        ports =  line.scan(port)
+  
+        # Reformat output
+        ports.each { |p| puts p}
+      end
+    end
+  rescue Exception => e
+    puts e
+  end
+end
+
+def xml(ip, state, file)
+  require "rexml/document"
+  include REXML
+  
+  begin
+
+    if file then stream = File.new(file)
+    else stream = $stdin end
+  
+    # Read file
+    nmap_doc = REXML::Document::new stream
+    
+    # Navigate to specified ip + state and print ports
+    pattern = "//host[address/@addr='#{ip}']//port[state/@state='#{state}']"
+    nmap_ip = XPath.each(nmap_doc, pattern) {|e| puts e.attributes["portid"]}
+  rescue Exception => e
+      puts e
+  end
+end
+
+
+def usage()
+  use = <<END
+pextractor - A nmap parsing tool
+
+It is used to extract [open | closed | filtered] ports in a nmap file.
+
+Usage: pextractor <IP> <Port State> <File Type> <Nmap File>
+
+PORT STATES:
+ -open      is opened ports of a host (default).
+ -closed    is closed ports of a host.
+ -filtered  is filtered ports of a host.
+
+FILE TYPES:
+ -oX is xml nmap output. 
+ -oN is nmap output. 
+ -oG is grepable nmap output.
+           
+NOTE: 
+ [FILE TYPE] is NOT required when file has 
+ .nmap | .xml | .gnmap extension
+
+
+EXAMPLES:
+ pextractor 192.168.0.20 ports.nmap
+ pextractor 192.168.0.20 -oX ports.xml
+ pextractor 192.168.0.20 -filtered nmap_scan.gnmap
+ nmap -sS 192.168.0.0/24 -oG - | pextractor 192.16.0.20 -oG 
+
+END
+  puts use
+end
+
+def detect(ip, st, file)
+
+  extentions = [".xml", ".nmap", ".gnmap"]
+  options = ["-oX", "-oN", "-oG"]
+  
+  # Check file type
+  i = extentions.index(File.extname(file)) 
+
+  (main(ip, st, options[i], file); return) if i
+  # Raise exception
+  #raise Exception.new("Supported extensions: " + extentions.join(" | "))
+  raise usage
+end
+
+begin
+  # Check argument state
+  state_opt = ["-closed", "-filtered", "-open"]
+  state = ARGV[1][1..-1] if state_opt.include? ARGV[1]
+  if !state
+    state = "open"
+    main(ARGV[0], state, ARGV[1], ARGV[2])
+  else
+    main(ARGV[0], state, ARGV[2], ARGV[3])
+  end
+rescue Exception => e
+  puts e
+end

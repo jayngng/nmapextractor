@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Sun Aug 29 17:08:49 2021 as: nmap -sS -oA nmap/scan 172.16.10.0/24
+Host: 172.16.10.1 ()	Status: Up
+Host: 172.16.10.1 ()	Ports: 53/open/tcp//domain///, 80/open/tcp//http///, 443/open/tcp//https///	Ignored State: filtered (997)
+Host: 172.16.10.11 ()	Status: Up
+Host: 172.16.10.11 ()	Ports: 23/open/tcp//telnet///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 2869/open/tcp//icslap///, 3389/open/tcp//ms-wbt-server///	Ignored State: closed (994)
+Host: 172.16.10.19 ()	Status: Up
+Host: 172.16.10.19 ()	Ports: 21/open/tcp//ftp///, 23/open/tcp//telnet///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 2869/open/tcp//icslap///, 3389/open/tcp//ms-wbt-server///	Ignored State: closed (993)
+Host: 172.16.10.20 ()	Status: Up
+Host: 172.16.10.20 ()	Ports: 23/open/tcp//telnet///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 2869/open/tcp//icslap///, 3389/open/tcp//ms-wbt-server///	Ignored State: closed (994)
+Host: 172.16.10.37 ()	Status: Up
+Host: 172.16.10.37 ()	Ports: 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 1027/open/tcp//IIS///	Ignored State: closed (997)
+# Nmap done at Sun Aug 29 17:13:01 2021 -- 256 IP addresses (5 hosts up) scanned in 252.36 seconds

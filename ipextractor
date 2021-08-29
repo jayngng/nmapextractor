@@ -1,0 +1,103 @@
+#!/usr/bin/ruby
+
+
+def main(opt, file)
+  case opt
+    when nil then usage
+    when "-oN" then nmap(file)
+    when "-oG" then gnmap(file)
+    when "-oX" then xml(file)
+    else detect(opt)
+  end
+end
+
+
+def nmap(file)
+  pattern = /^(?:Nmap scan report for )((?:\d{1,3}\.){3}\d{1,3})\n$/
+  readstream(pattern, file)
+end
+
+def gnmap(file)
+  pattern = /^(?:Host: ((?:\d{1,3}\.){3}\d{1,3}))\s+\(\)\s+Status: Up/
+  readstream(pattern, file)
+end
+
+def xml(file)
+  require "rexml/document"
+  begin
+    if file then stream = REXML::Document.new File.new(file)
+    else stream = $stdin end
+    
+    # Find up IP
+    stream.elements.each("//host[status/@state='up']//address[@addrtype='ipv4']") do |r|
+      puts r.attributes["addr"]
+    end
+  rescue Exception => e
+    puts e
+  end
+end
+
+def readstream(pattern, file)
+  
+  if file then stream = File.open(file, "r")
+  else stream = $stdin end
+
+  stream.each do |l|
+
+    # Compare pattern and line
+    l =~ pattern
+
+    puts $1 if $1
+  end
+end
+
+
+# detect file type
+def detect(file)
+  extentions = [".nmap", ".xml", ".gnmap"]
+  options = ["-oN", "-oX", "-oG"]
+
+  # check file type
+  i = extentions.index(File.extname(file))
+
+  (main(options[i], file); return) if i
+  # Otherwise, wrong filetype
+  #raise Exception.new("Supported extensions: " + extentions.join(" | "))
+  raise usage
+end
+
+
+def usage()
+  st = <<END
+ipextractor - A nmap parsing tool
+
+It is used to extract alive hosts in a nmap file.
+
+Usage: ipextractor <File Type> <Nmap File>|<Nmap Stream>
+
+FILE TYPES:
+ -oX is xml nmap output. 
+ -oN is nmap output. 
+ -oG is grepable nmap output.
+    
+NOTE: 
+[FILE TYPE] is NOT required when file has 
+ .nmap | .xml | .gnmap extension
+
+
+EXAMPLES:
+ ipextractor hosts.nmap
+ ipextractor -oX nmap_xml
+ ipextractor -oN nmap_scan.nmap
+ nmap -PE -sn -n 192.168.0.0/24 -oG - | ipextractor -oG
+
+END
+   puts st
+end
+
+
+begin
+  main(ARGV[0], ARGV[1])
+rescue Exception => e
+  puts e
+end
